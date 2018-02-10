@@ -1,0 +1,25 @@
+// ///////////////////////
+// @@ ++ NAVIGATION
+// ///////////////////////
+
+.navigation {
+  background-color: $color-gray;
+  color: $color-white;
+  padding: 1rem 0;
+
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+
+    &-link {
+      color: $color-white;
+      text-decoration: none;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+}

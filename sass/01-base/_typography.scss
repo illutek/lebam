@@ -1,0 +1,43 @@
+// /////////////////////////
+// @@ TYPOGRAPHY
+// ////////////////////////
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+
+.heading-primary {
+  display: block;
+  margin-bottom: 4rem;
+  font: {
+    size: 8rem;
+    weight: 400;
+  }
+}
+
+
+.heading-secondary {
+  display: block;
+  margin-bottom: 4rem;
+  font: {
+    size: 6rem;
+    weight: 400;
+  }
+}
+
+.heading-tertiary {
+  display: block;
+  margin-bottom: 4rem;
+  font: {
+    size: 4rem;
+    weight: 400;
+  }
+}
+

@@ -1,0 +1,36 @@
+// ///////////////////////
+// @@ ++ HEADER
+// ///////////////////////
+
+.header {
+  position: relative;
+  
+  &__top {
+    min-height: 5vh;
+    //padding: 1rem 0;
+    font-size: 2rem;
+    background-color: $color-gray;
+    color: $color-white;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: .5rem;
+  }
+  
+  &__main {
+    min-height: 95vh;
+    background: url("../images/header-bcg.jpg") no-repeat top left;
+    background-size: cover;
+
+    &__logo-box {
+      position: absolute;
+      right: 2rem;
+      bottom: 2rem;
+    }
+  }
+
+  &__logo {
+
+  }
+
+
+}
