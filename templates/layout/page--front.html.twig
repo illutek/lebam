@@ -58,18 +58,25 @@
 
   </header>
 
-  <nav class="navigation">
-    <div class="row">
-      {{ page.navigation }}
-    </div>
-  </nav>
+    {% include directory ~ '/templates/partials/navigation.html.twig' %}
+
   <div class="row">
 
     {{ page.help }}
 
-    <div class="page-content">
+    <section class="page-content">
       {{ page.content }}
-    </div>{# /.layout-06-content #}
+    </section>{# /.layout-06-content #}
+
+    <section class="data">
+      {{ page.data }}
+    </section>
+
+    <section class="contact">
+      <h2 class="heading-secondary">
+        Contact gegevens
+      </h2>
+    </section>
 
 
   </div>

@@ -1,0 +1,27 @@
+// ///////////////////////
+// @@ ++ NODE
+// ///////////////////////
+
+.node {
+
+  &__content {
+    img {
+      float: left;
+      margin-right: 3rem;
+
+      @include respond(phone) {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 3rem;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+//TODO waar wordt deze icon ingesteld
+
+.feed-icons {
+  display: none;
+}

@@ -49,11 +49,7 @@
     </div>
   </header>
 
-  <nav class="navigation">
-    <div class="row">
-      {{ page.navigation }}
-    </div>
-  </nav>
+    {% include directory ~ '/templates/partials/navigation.html.twig' %}
 
   <div class="row">
 
@@ -61,7 +57,7 @@
 
       <div class="page-content">
         {{ page.content }}
-      </div>{# /.layout-06-content #}
+      </div>{# /.layout-05-content #}
 
   </div>
 

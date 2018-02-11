@@ -12,4 +12,5 @@ libraries:
 regions:
   navigation: Navigation
   content: Content
+  data: Data
 
