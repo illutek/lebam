@@ -1,0 +1,32 @@
+// ///////////////////////
+// @@ ++ DATA
+// ///////////////////////
+
+.data {
+  color: $color-white;
+  background-color: $color-gray;
+  padding: 6rem 0 8rem;
+
+  &__field__item {
+    a {
+      text-decoration: none;
+      color: $color-gold;
+      transition: all .3s;
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    border-color: $color-white;
+  }
+
+  td, th {
+    border: solid 1px $color-white;
+  }
+
+
+
+}
