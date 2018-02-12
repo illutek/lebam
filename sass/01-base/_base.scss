@@ -25,4 +25,17 @@ html {
 
 body {
   box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+
+
+table {
+
+
+}
+
+th, td {
+  border: 1px solid $color-black;
+  padding: 1rem;
 }

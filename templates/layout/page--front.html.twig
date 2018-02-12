@@ -69,17 +69,24 @@
     </section>{# /.layout-06-content #}
 
     <section class="data">
+      <h2 class="heading-secondary">
+        Data
+      </h2>
       {{ page.data }}
     </section>
 
-    <section class="contact">
-      <h2 class="heading-secondary">
-        Contact gegevens
-      </h2>
-    </section>
-
-
   </div>
 
+  {% include directory ~ '/templates/partials/contact.html.twig' %}
+
+  <footer class="footer">
+    <div class="row">
+      <div class="footer__copy">
+        &copy; {{ "now"|date("Y") }} | Mabel Teunissen | VOF LEBAM | BTW 0844 369 558 | Bank: KBC BE03 7390 1136 7084
+      </div>
+
+
+    </div>
+  </footer>
 
 </div>{# /.layout-container #}

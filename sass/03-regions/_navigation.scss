@@ -3,6 +3,8 @@
 // ///////////////////////
 
 .navigation {
+  position: sticky;
+  top: 0;
   background-color: $color-gray;
   color: $color-white;
   padding: 1rem 0;
