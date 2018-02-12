@@ -49,16 +49,10 @@
     </div>
   </header>
 
-    {% include directory ~ '/templates/partials/navigation.html.twig' %}
+  {% include directory ~ '/templates/partials/navigation.html.twig' %}
 
-  <div class="row">
+  {% include directory ~ '/templates/partials/content.html.twig' %}
 
-    {{ page.help }}
-
-      <div class="page-content">
-        {{ page.content }}
-      </div>{# /.layout-05-content #}
-
-  </div>
+  {% include directory ~ '/templates/partials/footer.html.twig' %}
 
 </div>{# /.layout-container #}

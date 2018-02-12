@@ -44,46 +44,28 @@
 #}
 <div class="layout-container">
 
-    <header class="header">
-        <div class="header__top header__top--front">
-            {% include directory ~ '/templates/partials/header-top-content.html.twig' %}
-        </div>
-
-        <div class="header__main">
-            <div class="header__main__logo-box">
-                <img src="{{ base_path ~ directory }}/images/MABEL.png" class="header__logo">
-
-            </div>
-        </div>
-
-    </header>
-
-    {% include directory ~ '/templates/partials/navigation.html.twig' %}
-
-    <div class="row">
-
-        {{ page.help }}
-
-        <section class="page-content">
-            {{ page.content }}
-        </section>{# /.layout-06-content #}
-
+  <header class="header">
+    <div class="header__top header__top--front">
+      {% include directory ~ '/templates/partials/header-top-content.html.twig' %}
     </div>
 
-    {% include directory ~ '/templates/partials/data.html.twig' %}
+    <div class="header__main">
+      <div class="header__main__logo-box">
+        <img src="{{ base_path ~ directory }}/images/MABEL.png" class="header__logo">
 
+      </div>
+    </div>
 
-    {% include directory ~ '/templates/partials/contact.html.twig' %}
+  </header>
 
-    <footer class="footer">
-        <div class="row">
-            <div class="footer__copy">
-                &copy; {{ "now"|date("Y") }} | Mabel Teunissen | VOF LEBAM | BTW 0844 369 558 | Bank: KBC BE03 7390 1136
-                7084
-            </div>
+  {% include directory ~ '/templates/partials/navigation.html.twig' %}
 
+  {% include directory ~ '/templates/partials/content.html.twig' %}
 
-        </div>
-    </footer>
+  {% include directory ~ '/templates/partials/data.html.twig' %}
+
+  {% include directory ~ '/templates/partials/contact.html.twig' %}
+
+  {% include directory ~ '/templates/partials/footer.html.twig' %}
 
 </div>{# /.layout-container #}
