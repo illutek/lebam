@@ -10,6 +10,7 @@ libraries:
   - illutek/globaljs
 
 regions:
+  mobilenav: "Navigation Mobile"
   navigation: Navigation
   content: Content
   data: Data

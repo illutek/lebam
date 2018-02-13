@@ -13,6 +13,10 @@
     border-radius: 2px;
     box-shadow: 0 1rem 2rem rgba($color-black, .15);
 
+    @include respond(small-phone) {
+      padding: 1rem 1rem;
+    }
+
     &:hover {
       color: $color-white;
       box-shadow: 0 1rem 4rem rgba($color-black, .15);

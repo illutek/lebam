@@ -9,21 +9,24 @@
   color: $color-white;
   padding: 1rem 0;
 
+  &__checkbox {
+    display: none;
+  }
+
   &__item {
     display: inline-block;
     &:not(:last-child) {
-      margin-right: 5rem;
+      margin-right: 4rem;
 
       @include respond(phone) {
-        margin-right: 1.7rem;
+        margin-right: 1.3rem;
       }
     }
-
 
     &-link {
       color: $color-white;
       text-decoration: none;
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-transform: uppercase;
 
       @include respond(phone) {
@@ -33,10 +36,123 @@
   }
 
   &__no-mobile {
+    display: block;
 
     @include respond(phone) {
       //display: none;
     }
   }
 
+  &__mobile {
+    display: none;
+
+    &__box {
+      min-height: 2.3rem;
+    }
+
+    @include respond(phone) {
+      //display: block;
+    }
+  }
+
+
+
+  &__button {
+    //text-align: right;
+  }
+
+  &__icon {
+    position: relative;
+    transform: translate(5rem, .6rem);
+
+    @include respond(small-phone) {
+      //transform: translateY(2.5rem);
+    }
+
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-white;
+      display: inline-block;
+      transition: all .3s;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -.8rem;
+    }
+
+    &::after {
+      top: .8rem;
+    }
+
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top:  0;
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+
+  }
+}
+
+.overlay__mobile__navigation {
+  height: 100vh;  //Property Syntax
+  width: 70%;
+  background: $color-gray;
+  padding-top: 25vh;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: 0;
+  transition: all .5s;
+  transform: translateX(100%);
+
+
+  .navigation__item {
+    display: block;
+    &:not(:last-child){
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.region-mobilenav {
+  position: absolute;
+  right: 10vw;
+  width: 60%;
+
+}
+
+ul.menu {
+  margin-left: 0;
 }
