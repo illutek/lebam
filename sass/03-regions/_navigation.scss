@@ -39,7 +39,7 @@
     display: block;
 
     @include respond(phone) {
-      //display: none;
+      display: none;
     }
   }
 
@@ -51,7 +51,7 @@
     }
 
     @include respond(phone) {
-      //display: block;
+      display: block;
     }
   }
 
@@ -63,7 +63,7 @@
 
   &__icon {
     position: relative;
-    transform: translate(5rem, .6rem);
+    transform: translate(85vw, 1rem);
 
     @include respond(small-phone) {
       //transform: translateY(2.5rem);
@@ -113,6 +113,10 @@
     top: 1rem;
   }
 
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
   &__checkbox:checked + &__button &__icon::before {
     transform: rotate(135deg);
     top:  0;
@@ -144,6 +148,10 @@
       margin-bottom: 3rem;
     }
   }
+}
+
+.naviagtion__checkbox:checked ~ .overlay__mobile__navigation {
+  transform: translateX(0);
 }
 
 .region-mobilenav {
