@@ -9,10 +9,6 @@
   color: $color-white;
   padding: 1rem 0;
 
-  &__checkbox {
-    display: none;
-  }
-
   &__item {
     display: inline-block;
     &:not(:last-child) {
@@ -35,35 +31,42 @@
     }
   }
 
+  // show full navigation
   &__no-mobile {
     display: block;
 
+    // hide full navigation for phone
     @include respond(phone) {
       display: none;
     }
   }
 
+  // hide mobile navigation hamburger icon
   &__mobile {
     display: none;
 
     &__box {
-      min-height: 2.3rem;
+      min-height: 3.3rem;
+      position: relative;
     }
 
+    // show mobile navigation for phone
     @include respond(phone) {
       display: block;
     }
   }
 
-
-
   &__button {
-    //text-align: right;
+    min-height: 5.3rem;
+    position: absolute;
+    top: -.5rem;
+    right: -1rem;
+    width: 7rem;
   }
 
   &__icon {
-    position: relative;
-    transform: translate(85vw, 1rem);
+    //position: relative;
+    //transform: translate(85vw, 1.3rem);
 
     @include respond(small-phone) {
       //transform: translateY(2.5rem);
@@ -73,11 +76,11 @@
     &,
     &::before,
     &::after {
-      width: 3rem;
-      height: 2px;
+      margin-top: 2rem;
+      width: 4rem;
+      height: 3px;
       background-color: $color-white;
       display: inline-block;
-      transition: all .3s;
     }
 
     &::before,
@@ -88,78 +91,16 @@
     }
 
     &::before {
-      top: -.8rem;
+      top: -1rem;
     }
 
     &::after {
-      top: .8rem;
+      top: 1rem;
     }
 
   }
-
-  &__button:hover &__icon::before {
-    top: -1rem;
-  }
-
-  &__button:hover &__icon::after {
-    top: 1rem;
-  }
-
-  &__button:hover &__icon::before {
-    top: -1rem;
-  }
-
-  &__button:hover &__icon::after {
-    top: 1rem;
-  }
-
-  &__checkbox:checked + &__button &__icon {
-    background-color: transparent;
-  }
-
-  &__checkbox:checked + &__button &__icon::before {
-    transform: rotate(135deg);
-    top:  0;
-  }
-
-  &__checkbox:checked + &__button &__icon::after {
-    transform: rotate(-135deg);
-    top: 0;
-
-  }
 }
 
-.overlay__mobile__navigation {
-  height: 100vh;  //Property Syntax
-  width: 70%;
-  background: $color-gray;
-  padding-top: 25vh;
-  position: fixed;
-  z-index: 50;
-  top: 0;
-  right: 0;
-  transition: all .5s;
-  transform: translateX(100%);
-
-
-  .navigation__item {
-    display: block;
-    &:not(:last-child){
-      margin-bottom: 3rem;
-    }
-  }
-}
-
-.naviagtion__checkbox:checked ~ .overlay__mobile__navigation {
-  transform: translateX(0);
-}
-
-.region-mobilenav {
-  position: absolute;
-  right: 10vw;
-  width: 60%;
-
-}
 
 ul.menu {
   margin-left: 0;

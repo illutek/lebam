@@ -6,8 +6,8 @@ package: Custom
 core: 8.x
 version: 1.0.0
 libraries:
-  - illutek/globalstyle
-  - illutek/globaljs
+  - lebam/globalstyle
+  - lebam/globaljs
 
 regions:
   mobilenav: "Navigation Mobile"
