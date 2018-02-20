@@ -1,0 +1,26 @@
+// ////////////////////////////
+// @@ ++ MAINTENANCE PAGE
+// ////////////////////////////
+
+.maintenance-page {
+  background: url("../images/mabel-frank.jpg") no-repeat top left;
+  background-size: cover;
+  height: 100vh;
+
+  &__container {
+    position: relative;
+    height: 100%;
+  }
+
+  &__logo-box {
+    padding-top: 5rem;
+  }
+
+  &__content {
+    color: $color-white;
+    @include center(horizontal);
+    bottom: 10vh;
+
+  }
+}
+
